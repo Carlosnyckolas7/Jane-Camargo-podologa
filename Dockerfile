@@ -32,6 +32,8 @@ RUN php artisan key:generate
 # Criar banco sqlite
 RUN touch /var/www/html/database/database.sqlite
 
+# rodar migrations
+RUN php artisan migrate --force
 
 # Permissões do Laravel
 RUN chown -R www-data:www-data /var/www/html \
