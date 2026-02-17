@@ -29,6 +29,10 @@ RUN composer install --no-dev --optimize-autoloader
 RUN cp .env.example .env
 RUN php artisan key:generate
 
+# Criar banco sqlite
+RUN touch /var/www/html/database/database.sqlite
+
+
 # Permissões do Laravel
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 775 /var/www/html/storage \
