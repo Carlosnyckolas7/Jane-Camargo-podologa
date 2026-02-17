@@ -29,4 +29,10 @@ RUN composer install --no-dev --optimize-autoloader
 RUN cp .env.example .env
 RUN php artisan key:generate
 
+# Permissões do Laravel
+RUN chown -R www-data:www-data /var/www/html \
+    && chmod -R 775 /var/www/html/storage \
+    && chmod -R 775 /var/www/html/bootstrap/cache
+
+
 EXPOSE 80
