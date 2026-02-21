@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Mim - Clínica de Podologia Pé Saudável</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Garamond&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Jane Camargo Podologia</h1>
-        </div>
-    </header>
+@extends('layouts.principal')
 
+@section('content')
     <main class="main_about">
         <section id="sobre-mim">
             <h2 id="h2_">Especialidades Clínicas</h2>
@@ -39,8 +22,7 @@
                         <p>Podopediatria (Pés Infantis):<br>Cuidado lúdico e delicado para crianças. Tratamos desde o corte correto para evitar malformações até casos de unhas encravadas comuns na infância.</p>
                         <p>Gerontopodologia:<br>
                             O Cuidado com os Pés na Terceira Idade ​Com o passar dos anos, os pés sofrem alterações na estrutura, na circulação e na espessura da pele e das unhas.
-                            O atendimento especializado para idosos foca em ​prevenção de quedas: Unhas bem cortadas e calosidades tratadas garantem uma pisada mais estável e segura.
-</p>
+                            O atendimento especializado para idosos foca em ​prevenção de quedas: Unhas bem cortadas e calosidades tratadas garantem uma pisada mais estável e segura.</p>
                         
                         
                         <!--
@@ -56,11 +38,4 @@
             </div>
         </section>
     </main>
-
-    <footer>
-        <div class="container_footer">
-            <p>&copy; 2026 Jane Podóloga.</p>
-        </div>
-    </footer>
-</body>
-</html>
+@endsection

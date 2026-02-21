@@ -1,25 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços - Clínica de Podologia Pé Saudável</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Garamond&display=swap" rel="stylesheet">
-</head>
+@extends('layouts.principal')
 
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Jane Camargo Podologia</h1>
-        </div>
-    </header>
-
+@section('content')
     <main class="main_services">
         <section id="servicos">
             <div class="container">
@@ -93,8 +74,4 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container_footer">
-            <p>&copy; 2026 Jane Podóloga.</p>
-        </div>
-    </footer>
+@endsection
