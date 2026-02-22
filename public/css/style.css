@@ -1,0 +1,369 @@
+
+*{
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box
+}
+
+/* Chrome, Edge e Safari */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* IE e Edge antigo */
+body {
+  -ms-overflow-style: none;
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(37, 112, 112);
+    width: 100%;
+    height: 10vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive;
+    font-weight:lighter ;
+    color: white;
+}
+
+h2, h3, p, a {
+  font-family: 'Garamond', serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav ul li{
+    display: flex;
+    padding: 15px;
+}
+li a{
+    color: white;
+    font-weight: bold;
+}
+a:hover {
+    color: aquamarine;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    background-color: rgb(37, 112, 112);
+    color: #fff;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: rgb(66, 141, 131);
+}
+
+main {
+    background-color: azure;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    flex-grow: 1;
+}
+
+#hero {
+    background-image: url(./../img/excellence_beaute.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    height: 40vh;
+}
+
+.container_main {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+#h2_ {
+    text-align: center;
+    display: flex;
+    border-bottom: 2px solid #000; /* linha */
+    padding-bottom: 8px; /* espaço entre texto e linha */
+}
+
+#sobre-breve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+img {
+    border-radius: 20px;
+}
+
+.sobre {
+    width: 40vw;
+}
+
+.sobre-img {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: rgb(189, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5vh;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        height: auto; /* Ajusta altura para conteúdo */
+        padding-bottom: 15px; /* Reduz padding */
+    }
+
+    .container {
+        flex-direction: column; /* Empilha elementos verticalmente */
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reduz tamanho da fonte */
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 30px; /* Reduz de 40px para mobile */
+        text-align: center; /* Garante centralização */
+    }
+
+    h2, h3, p, a {
+        font-size: 16px; /* Reduz fonte geral para mobile */
+    }
+
+    nav ul {
+        flex-direction: column; /* Navegação vertical */
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 10px; /* Reduz padding */
+        width: 100%; /* Largura total para toque fácil */
+        justify-content: center;
+    }
+
+    li a {
+        font-size: 18px; /* Ajusta tamanho para mobile */
+    }
+
+    main {
+        min-height: auto; /* Remove altura fixa para fluxo natural */
+        padding: 20px; /* Adiciona padding para espaço */
+    }
+
+    #hero {
+        background-size: cover; /* Ajusta imagem para cobrir sem distorcer */
+        height: 50vh; /* Ajusta altura para mobile */
+        padding: 50px 20px; /* Reduz padding */
+        flex-direction: column; /* Empilha conteúdo */
+        text-align: center;
+    }
+
+    .container_main {
+        grid-template-columns: 1fr; /* Uma coluna em mobile */
+        gap: 20px; /* Espaço entre itens */
+    }
+
+    #sobre-breve {
+        height: auto; /* Altura automática */
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre {
+        width: 90vw; /* Largura quase total em mobile */
+    }
+
+    .sobre-img {
+        padding-left: 0; /* Remove padding lateral */
+        padding-top: 20px;
+    }
+
+    img {
+        max-width: 100%; /* Imagens responsivas */
+        height: auto;
+    }
+
+    .btn {
+        padding: 12px 20px; /* Ajusta padding para toque */
+        font-size: 16px;
+    }
+
+    footer {
+        height: auto; /* Altura automática */
+        padding: 15px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+
+/* Página sobre */
+
+/* Adicione ao final do CSS existente */
+.main_about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sobre-mim {
+    padding: 60px 0;
+    max-width: 80ch;
+}
+
+.sobre-mim-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 15px;
+
+}
+
+.sobre-mim-texto {
+    flex: 1;
+    text-align: left;
+}
+
+.sobre-mim-texto ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .sobre-mim-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .sobre-mim-texto {
+        text-align: center;
+    }
+    
+    .sobre-mim-texto ul {
+        text-align: left;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+}
+
+
+/* Serviços */
+.main_services {
+    padding-bottom: 30px;
+}
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+#servicos{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.servico {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.servico h3 {
+    margin-bottom: 10px;
+    color: rgb(37, 112, 112);
+}
+
+.servico p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.servicos-cta {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.servicos-cta p {
+    margin-bottom: 20px;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .servicos-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .servico {
+        padding: 15px;
+    }
+}
